@@ -55,6 +55,11 @@ body{
     box-shadow: 0 0 20px #1da1f2;
 }
 
+.icon:hover:nth-child(5){
+    background-color: #EA4335;
+    box-shadow: 0 0 20px #EA4335;
+}
+
 .icon i{
     color: #fff;
     position: absolute;
@@ -74,10 +79,11 @@ svg circle{
 }
 
 .contenedor{
-    width: 90%;
-    max-width: 1200px;
+    width: 100%;
     margin: auto;
+    padding: 10px;
 }
+
 
 .bg_animated{
     width: 100%;
@@ -102,18 +108,25 @@ svg circle{
 }
 
 .header_nav nav ul{
-      position: relative;
-      left: 0%;
+    position: relative;
+    left: 0%;
 }
 .header_nav nav ul:after {
-      content: '';
-      display: table;
-      clear: both;
+    content: '';
+    display: table;
+    clear: both;
 }
 .header_nav nav ul li {
         list-style: none;
         display: inline-block;
 }
+
+a{
+    text-decoration: none;
+    font-family: sans-serif;
+    color: #bbb;
+}
+
 .header_nav nav ul li a {
         position: relative;
         display: inline-block;
@@ -128,7 +141,7 @@ svg circle{
         transition: .5s;
         z-index: 1;
 }
-  
+
 
 .header_nav nav ul li a:before {
     content: '';
@@ -172,30 +185,110 @@ svg circle{
 }
 
 .banner {
-    display: flex;
+    /*border: none;*/
+    display: inline-flex;
     justify-content: space-between;
     align-items: center;
-    height: 80%;
+    height: 70%;
+    margin-left: 5%;
+    margin-top: 2%;
+    width: 60%; 
+}
+
+.about {
+    /*border: none;*/
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    margin-top: 8%;
+    width: 90%;
+    font-size: 20px;
+    color: #ccc;
+    text-align: justify;
+    
+}
+
+.project{
+    height: auto;
+    margin-top: 2%;
+    display: inline-flex;
+}
+
+.projectcont{
+    color: #ccc;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.projecttxt{
+    width: calc(30% - 40px);
+    margin:20px;
+}
+
+.projecttxt a{
+    color: #fff;
+}
+
+
+.abouti{
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    font-size: 20px;
+    color: #ccc;
+    text-align: justify;
+    width: 75%;
+}
+
+.aboutim{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    font-size: 20px;
+    color: #ccc;
+    text-align: justify;
+}
+
+
+.skills{
+    margin-left: 5%;
 }
 
 .banner_tittle h1{
     color: #fff;
     font-size: 75px;
     font-weight: 900;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
 }
 
 .banner_tittle p{
     font-size: 20px;
     margin-bottom: 0px;
-    color: #aaa;
+    color: #ccc;
+    text-align: justify;
 }
 
-.banner_tittle .contact_me{
+.cv_container{
+    display:inline-flex;
+    justify-content: center;
+    vertical-align: middle;
+    position: absolute;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.contact_me{
     color: #fff;
     text-decoration: none;
-    display: inline-flex;
-    background: #141414;
+    display:flex;
+    background: #212121;
     border-color: #1a2849;
     cursor: pointer;
     padding: 0;
@@ -206,12 +299,13 @@ svg circle{
     border-radius: 5px;
     position: relative;
     border: none;
+    margin: auto;
     align-items: center;
     justify-content: center;
     overflow: hidden;
 }
 
-.banner_tittle .contact_me .contact_txt{
+.contact_me .contact_txt{
     color: #fff;
     text-decoration: none;
     font-size: 30px;
@@ -219,7 +313,7 @@ svg circle{
     transition: .3s ease all;
 }
 
-.banner_tittle .contact_me::after{
+.contact_me::after{
     content: "";
     width: 100%;
     position: absolute;
@@ -231,7 +325,7 @@ svg circle{
     transition: .6s ease-in-out all;
 }
 
-.banner_tittle .contact_me:hover::after{
+.contact_me:hover::after{
     left: 0;
 }
 
@@ -243,28 +337,28 @@ svg circle{
 /* Bubbles */
 
 .bubble {
-  position: absolute;
-  bottom: -100px;
-  border-radius: 50%;
-  opacity: .3;
-  background-color: white;
-  animation: float 1s linear infinite;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    position: absolute;
+    bottom: -100px;
+    border-radius: 50%;
+    opacity: .3;
+    background-color: white;
+    animation: float 1s linear infinite;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 @keyframes float {
-  0%{
-    opacity: 0;
-    bottom: 0;
-  }
-  50%{
-    opacity: .4;
-  }
-  100%{
-    opacity: 0;
-    bottom: 100%;
-  }
+    0%{
+        opacity: 0;
+        bottom: 0;
+    }
+    50%{
+        opacity: .4;
+    }
+    100%{
+        opacity: 0;
+        bottom: 100%;
+    }
 }
-  
+
