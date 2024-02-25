@@ -1,0 +1,591 @@
+*{
+    font-family:Verdana, Tahoma, sans-serif;
+}
+
+html{
+    background-color: #F3F5FC;
+}
+
+
+
+.main-container form{
+    position: relative;
+    width: 98vw;
+    height: 72vh;
+}
+
+
+.container-empty{
+    position: absolute;
+    width: 25%;
+    height: 80%;
+    right: 0;
+    top:0;
+    margin: 40px;
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+    padding: auto;
+    text-align: center;
+    font-size: 16px;
+}
+
+.dibujo{
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    background-color: white;
+}
+
+br{
+    font-size: 24px;
+}
+
+.encriptar{
+    background-color: #0A3871;
+    color: #FFFFFF;
+    left: 80px;
+}
+
+.encriptar:hover{
+    transition: 1s;
+    background-color: #0d4fa0;
+}
+
+.descencriptar{
+    background-color: #F3F5FC;
+    left: 35%;
+}
+
+.descencriptar:hover{
+    transition: 1s;
+    background-color: #D8DFE8;
+}
+
+.botones{
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    padding:0;
+    width: 280px;
+    height: 37px;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    position: absolute;
+    bottom: 0;
+    margin:0 auto;
+}
+
+.aviso{
+    border: none;
+    margin-bottom: 25px ;
+    margin-left: 80px;
+    width: auto;
+}
+
+.logo{
+    margin: 18px 40px;
+}
+
+.text-area{
+    outline: none;
+    border: none;
+    font-size: large;
+    color: #0A3871;
+    height: 300px;
+    resize: none;
+    width: 75%;
+    font-size: 28px;
+    background-color:transparent;
+}
+
+.text-area:focus{
+    outline: none;
+    border: none;
+}
+
+i{
+    color: #495057;
+    margin-right: 5px;
+}
+
+.text-container{
+    display: flex;
+    justify-content:center;
+    width: 65%;
+    margin-top: 50px;
+}
+
+::placeholder{
+    color: #495057;
+}
+
+.no-found{
+    font-size: 24px;
+    margin-top: 25px;
+}
+
+
+
+.result-container{
+    position: absolute;
+    width: 25%;
+    height: 80%;
+    right: 0;
+    top:0;
+    margin: 40px;
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+    padding: auto;
+    text-align: justify;
+    font-size: 20px;
+    color: #495057;
+}
+
+.copiar{
+    background-color: transparent;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    padding:0;
+    width: 80%;
+    height: 37px;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    position: absolute;
+    right: 11%;
+    bottom: 30px;
+}
+
+.copiado{
+    font-size: 16px;
+    text-align: center;
+    color: #0A3871;
+    position: absolute;
+    bottom: 70px;
+    left: 0;
+    right: 0;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.creditos{
+    text-align: center;
+    color: #495057;
+    margin-top: 30px;
+}
+
+/****************************RESPONSIVE - TABLET***************************************/
+
+@media (max-width:1060px) {
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+
+    .main-container{
+        width: 96vw;
+        height: 98vh;
+        padding: auto;
+        position: relative;
+    }
+
+
+
+
+    .main-container form{
+        position: absolute;
+        width: 98vw;
+        height: 45vh;
+    }
+    
+    
+    .container-empty{
+        
+        
+        margin-top: 80%;
+        width: 80vw;
+        height: 186px;
+        background: #FFFFFF;
+        box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+        border-radius: 32px;
+        position: absolute;
+        top: 5%;
+        left: 0;
+        background: white;
+        padding: auto;
+        text-align: center;
+        font-size: 24px;
+        
+    }
+    
+    .dibujo{
+        display: none;
+    }
+    
+    br{
+        font-size: 24px;
+    }
+    
+    .encriptar{
+        background-color: #0A3871;
+        color: #FFFFFF;
+        left: 10px;
+    }
+    
+    .encriptar:hover{
+        transition: 1s;
+        background-color: #0d4fa0;
+    }
+    
+    .descencriptar{
+        background-color: #F3F5FC;
+        right: 0px;
+    }
+    
+    .descencriptar:hover{
+        transition: 1s;
+        background-color: #D8DFE8;
+    }
+    
+    .botones{
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        padding:0;
+        width: 40%;
+        height: 67px;
+        border: 1px solid #0A3871;
+        border-radius: 24px;
+        position: absolute;
+        bottom: 0;
+        
+    }
+    
+    .aviso{
+        border: none;
+        margin-bottom: 25px ;
+        margin-left: 20px;
+        width: auto;
+    }
+    
+    .logo{
+        margin: 18px 40px;
+    }
+    
+    .text-area{
+        outline: none;
+        border: none;
+        font-size: large;
+        color: #0A3871;
+        height: 300px;
+        resize: none;
+        width: 98%;
+        font-size: 28px;
+        background-color:transparent;
+        margin-right: 30px;
+    }
+    
+    .text-area:focus{
+        outline: none;
+        border: none;
+    }
+    
+    i{
+        color: #495057;
+        margin-right: 5px;
+    }
+    
+    .text-container{
+        display: flex;
+        justify-content:center;
+        width: 80vw;
+        margin: 50px;
+
+    }
+    
+    ::placeholder{
+        color: #495057;
+    }
+    
+    .no-found{
+        font-size: 28px;
+        margin-top: 25px;
+    }
+    
+    
+    
+    .result-container{
+        margin: 80% auto 30px 0;
+        width: 92vw;
+        height: 30vh;
+        background: #FFFFFF;
+        box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+        border-radius: 32px;
+        position: absolute;
+        top: 5%;
+        left: 0;
+        background: white;
+        padding: auto;
+        text-align: justify;
+        font-size: 24px;
+        color: #495057;
+        
+    }
+    
+    .copiar{
+        background-color: transparent;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        padding:0;
+        width: 80%;
+        height: 37px;
+        border: 1px solid #0A3871;
+        border-radius: 24px;
+        position: absolute;
+        right: 11%;
+        bottom: 28px;
+    }
+    
+    .copiado{
+        font-size: 16px;
+        text-align: center;
+        color: #0A3871;
+        position: absolute;
+        bottom: 70px;
+        left: 0;
+        right: 0;
+    }
+
+    .creditos{
+        text-align: center;
+        color: #495057;
+        margin-top: 30px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+    }
+}
+
+
+/****************RESPONSIVE-MOBILE*********************/
+
+
+@media (max-width:540px) {
+    
+    ::-webkit-scrollbar{
+        display: none;
+    }
+
+
+
+    .main-container{
+        width: 98vw;
+        height: 98vh;
+        padding: auto;
+    }
+
+
+
+
+    .main-container form{
+        margin-top: 20px;
+        position: absolute;
+        width: 98vw;
+        height: 60vh;
+        
+    }
+    
+    
+    .container-empty{
+        
+        position: absolute;
+        width: 90vw;
+        height: 186px;
+        background: #FFFFFF;
+        box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+        border-radius: 32px;
+        margin: 10px auto;
+        top: 72%;
+        
+        background: white;
+        padding: auto;
+        text-align: center;
+        font-size: 24px;
+        
+    }
+    
+    .dibujo{
+        display: none;
+    }
+    
+    br{
+        font-size: 24px;
+    }
+    
+    .encriptar{
+        background-color: #0A3871;
+        color: #FFFFFF;
+        position: absolute;
+        bottom: 90px;
+        left: 0;
+        right: 0;
+    }
+    
+    .encriptar:hover{
+        transition: 1s;
+        background-color: #0d4fa0;
+    }
+    
+    .descencriptar{
+        background-color: #F3F5FC;
+        margin: 5px auto;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    
+    .descencriptar:hover{
+        transition: 1s;
+        background-color: #D8DFE8;
+    }
+    
+    
+
+    .botones{
+        padding: 24px;
+        gap: 8px;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        width: 95%;
+        height: 67px;
+        border: 1px solid #0A3871;
+        border-radius: 24px;
+    }
+
+    
+    .aviso{
+        
+        border: none;
+        margin-bottom: 100px ;
+        margin-left: 0;
+        width: auto;
+    }
+    
+    .logo{
+        margin: 5px;
+        width: 32px;
+        height: 48px;
+    }
+    
+    .text-area{
+        outline: none;
+        border: none;
+        font-size: large;
+        color: #0A3871;
+        height: 200px;
+        resize: none;
+        width: 100vw;
+        font-size: 28px;
+        background-color:transparent;
+        overflow: auto;
+    }
+    
+    .text-area:focus{
+        outline: none;
+        border: none;
+    }
+    
+    i{
+        color: #495057;
+        margin-right: 5px;
+    }
+    
+    .text-container{
+        display: flex;
+        align-items: center;
+        justify-content:justify;
+        width: 98vw;
+        margin: 5px;
+
+    }
+    
+    ::placeholder{
+        color: #495057;
+    }
+    
+    .no-found{
+        font-size: 28px;
+        margin-top: 25px;
+    }
+    
+    
+    
+    .result-container{
+        position: absolute;
+        width: 85vw;
+        height:25vh;
+        background: #FFFFFF;
+        box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+        border-radius: 32px;
+        margin: 20px auto;
+        top: 70%;
+        background: #FFFFFF;
+        background: white;
+        padding: auto;
+        text-align: justify;
+        font-size: 24px;
+        color: #495057;
+        border: transparent;
+    
+    }
+
+    .result-text{
+            padding-top: 0;
+            margin-top: 0;
+            height: 18vh;
+            margin-bottom: 10px;
+            overflow-y: scroll;
+    }
+    
+    .copiar{
+        background-color: transparent;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        padding:0;
+        width: 80%;
+        height: 37px;
+        border: 1px solid #0A3871;
+        border-radius: 24px;
+        position: absolute;
+        right: 11%;
+        bottom: 28px;
+    }
+
+    .copiado{
+        font-size: 16px;
+        text-align: center;
+        color: #0A3871;
+        position: absolute;
+        bottom: 70px;
+        left: 0;
+        right: 0;
+    }
+}
+
+@media (max-width:285px) {
+    .aviso{
+        font-size: 12px;
+        margin-bottom: 90px;
+    }
+}

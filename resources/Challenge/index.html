@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheeyt" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/891745d4cc.js" crossorigin="anonymous"></script>
+    <script src="code.js"></script>
+    <title>Encriptador</title>
+</head>
+<body>
+    <div class="main-container">
+        <img src="resources/logo.png" class="logo">
+        <form>
+            <div class="text-container"><textarea placeholder="ingrese el texto aqui" class="text-area" maxlength="400" id="areatxt"></textarea></div>
+            <div class="abajo">
+                    <p class="aviso botones"><i class="fa-solid fa-circle-exclamation"></i>Sin acentos (máx 400 caracteres)</p>
+                    <button class="encriptar botones" onclick="encriptado()">Encriptar</button>
+                    <button class="descencriptar botones" onclick="descencriptado()">Descencriptar</button>
+            </div> 
+        </form>
+        
+
+        <div class="container-empty">
+            <div class="dibujo mono"><img src="resources/dibujo.png" class="dibujo"></div>
+            <p class="no-found"><b>Ningún mensaje fue encontrado</b></p>
+            <p class="description">Ingresa el texto que deseas encriptar o descencriptar</p>
+            <p class="result-text"></p>
+        </div>
+    </div>
+    <footer>
+        <p class="creditos">Desarrollado por Salvador Alejos</p>
+    </footer>
+</body>
+</html>
