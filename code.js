@@ -1,3 +1,27 @@
+function cambiarCSS() {
+  var screenWidth = window.innerWidth;
+  var cssFile;
+
+  // Si el ancho de la pantalla es menor o igual a 600px, cambia al CSS para pantallas pequeñas
+  if (screenWidth < 1024) {
+      cssFile = "css/style-responsive.css";
+  } else {
+      // De lo contrario, utiliza el CSS por defecto
+      cssFile = "css/style.css";
+  }
+
+  // Obtener el elemento de enlace CSS
+  var cssLink = document.getElementById("css-link");
+
+  // Cambiar el atributo href del enlace CSS para cargar el nuevo archivo CSS
+  cssLink.setAttribute("href", cssFile);
+}
+
+// Ejecutar la función cuando se cargue la página y cuando la ventana cambie de tamaño
+window.onload = cambiarCSS;
+window.onresize = cambiarCSS;
+
+
 function drawBubbles(numBubbles) {
     let bubbles = document.querySelector(".bubbles");
     
